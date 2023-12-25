@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width,initial-scale=1.0">
+  <title>ML API</title>
+ 
+  
+</head>
+
+<body>
+       <div> class="login">
+	<h1>Salary Analysis</h1>
+        <p>
+           ENTER:
+         
+        </p>  
+        <form action="{{url_for('predict')}}"method="POST">
+            <input type="text" name="age" placeholder="age of person">
+            <input type="text" name="Leaves used" placeholder="Leaves Used">
+            <input type="text" name="Leaves Remaining" placeholder="Leaves Remaining">
+            <input type="text" name="Ratings" placeholder="Ratings">
+            <input type="text" name="Past EXP" placeholder="Past EXP">
+            <input type="text" name="SEX_M" placeholder="SEX_M">
+            <input type="text" name="Designation_Associate" placeholder="Designation_Associate">
+            <input type="text" name="Designation_Director" placeholder="Designation_Director">
+            <input type="text" name="Designation_Manager" placeholder="Designation_Manager">  
+            <input type="text" name="Senior Analyst" placeholder="Senior Analyst">
+            <input type="text" name="Senior Manager" placeholder="Senior Manager">
+            <input type="text" name="UNIT_IT" placeholder="UNIT_IT">
+            <input type="text" name="UNIT_MANAGEMENT" placeholder="UNIT_MANAGEMENT">
+            <input type="text" name="UNIT_MARKETING" placeholder="UNIT_MARKETING">
+            <input type="text" name="UNIT_OPerations" placeholder="UNIT_Operations">
+            <input type="text" name="UNIT_WEB" placeholder="UNIT_WEB">
+           
+          
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            
+        </form>   
+  <br>
+  <br>
+  {{ prediction_text}}
+ </div> 
+  
+</body>
+</html>
