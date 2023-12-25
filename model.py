@@ -63,10 +63,6 @@ from sklearn.preprocessing import StandardScaler,OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-#df[['AGE', 'PAST EXP', 'RATINGS', 'LEAVES USED', 'LEAVES REMAINING', 'TENURE']] = scaler.fit_transform(df[['AGE', 'PAST EXP', 'RATINGS', 'LEAVES USED', 'LEAVES REMAINING', 'TENURE']])
-pipe = Pipeline([("scale",StandardScaler())])
-
-#df[['AGE' ,'PAST EXP', 'RATINGS', 'LEAVES USED', 'LEAVES REMAINING','SALARY']]=pipe.fit_transform(df[['AGE' ,'PAST EXP', 'RATINGS', 'LEAVES USED', 'LEAVES REMAINING','SALARY']])
 
 df.head()
 
@@ -125,7 +121,7 @@ plt.xticks(rotation=45)
 plt.grid(True)
 plt.show()
 
-## SO, the best model we choose is linear regression
+
 
 X_train
 
